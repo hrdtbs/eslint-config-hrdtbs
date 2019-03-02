@@ -13,8 +13,7 @@
       ":noUnscheduledUpdates",
       ":separatePatchReleases",
       ":unpublishSafe",
-      "helpers:disableTypesNodeMajor",
-      "@teppeis:semanticPrefixFixDepsPeerChoreOthers"
+      "helpers:disableTypesNodeMajor"
     ],
     "schedule": ["after 9pm", "before 9am"],
     "rangeStrategy": "bump",
