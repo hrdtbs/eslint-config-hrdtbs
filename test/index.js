@@ -3,7 +3,6 @@
 const path = require('path');
 const glob = require('glob');
 const eslint = require('eslint');
-
 const { CLIEngine } = eslint;
 const generateTest = require('./lib/generateTest');
 

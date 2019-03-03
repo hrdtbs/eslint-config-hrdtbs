@@ -7,6 +7,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+
   rules: {
     'node/no-unsupported-features/es-syntax': 0,
 

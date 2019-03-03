@@ -13,7 +13,8 @@ function formatMessages(messages) {
 function generateTest(result) {
   const filePath = path.basename(result.filePath);
   const { messages } = result;
-  const fatals = messages.filter(_ => !!_.fatal);
+  const fatals = messages.filter(_ => Boolean(_.fatal));
+
   if (fatals.length) {
     fatals.forEach(fatal => {
       console.error(`${filePath}:${fatal.line}:${fatal.column} ${fatal.message}`);

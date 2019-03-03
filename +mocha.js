@@ -3,8 +3,10 @@
 module.exports = {
   overrides: [
     {
-      files: ['**/test/**/*.js', '**/test/**/*.ts'],
+      // Enable in tests? folders
+      files: ['**/test/**', '**/tests/**'],
       env: {
+        // Adds all of the Mocha testing global variables.
         mocha: true,
       },
       rules: {
