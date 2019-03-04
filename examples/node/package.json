@@ -5,12 +5,19 @@
     "license": "MIT",
     "scripts": {
         "dev": "chokidar \"src/*.js\" -c \"yarn run start\"",
-        "start": "node ./src/index.js"    
+        "start": "node ./src/index.js",
+        "lint:js": "eslint '**/*.js' '**/.*.js'",
+        "lint:js:fix": "eslint '**/*.js' '**/.*.js' --fix",
+        "lint:json": "prettier --list-different '**/*.json'",
+        "lint:json:fix": "prettier --write '**/*.json'",
+        "test": "run-p -l -n -c --aggregate-output lint:js lint:json unit",
+        "unit": "mocha test" 
     },
     "devDependencies": {
         "eslint-config-hrdtbs": "hrdtbs/eslint-config-hrdtbs",
         "prettier": "^1.16.4",
-        "chokidar-cli": "^1.2.2"
+        "chokidar-cli": "^1.2.2",
+        "mocha": "^6.0.2"
     }
   }
   
