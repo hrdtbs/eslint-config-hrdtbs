@@ -3,7 +3,7 @@
 const globals = require('globals');
 
 module.exports = {
-  extends: './lib/index.js',
+  extends: './lib/base.js',
   globals: globals.es5,
 
   parserOptions: {

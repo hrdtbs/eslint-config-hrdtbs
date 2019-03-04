@@ -23,3 +23,5 @@ eslint
 - stylistic-issues what is only fixable, not recommended or deprecated, as customize errors.
 
 prettier を使用することを前提としているため、base.js に追加
+
++XXXXXX 系は +がついていないものと一緒に使うことを前提に作られています。

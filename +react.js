@@ -6,8 +6,14 @@
  */
 
 module.exports = {
+  /**
+   * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/index.js#L119-L150
+   */
   extends: ['plugin:react/recommended'],
-  plugins: ['react', 'react-hooks'],
+  /**
+   * @see https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/src/index.js
+   */
+  plugins: ['react-hooks'],
   parserOptions: {
     sourceType: 'module',
   },
