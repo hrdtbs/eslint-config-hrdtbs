@@ -1,0 +1,16 @@
+{
+    "name": "example-node",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "chokidar \"src/*.js\" -c \"yarn run start\"",
+        "start": "node ./src/index.js"    
+    },
+    "devDependencies": {
+        "eslint-config-hrdtbs": "hrdtbs/eslint-config-hrdtbs",
+        "prettier": "^1.16.4",
+        "chokidar-cli": "^1.2.2"
+    }
+  }
+  
